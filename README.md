@@ -11,6 +11,6 @@ A web application for calculating taxes based on user input.
   https://github.com/jangrasimran18/Tax-Calculator/
 
 ## Screenshots
-  Screenshots folder . 
+   Tax Calculator/Screenshots folder . 
   
 
