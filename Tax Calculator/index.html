@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <script  src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container calculator">
+        <!-- Calculator form content here -->
+    </div>
+    
+<div class="container">
+<h1>Tax Calculator</h1>
+<form id="taxForm">
+<div class="form-group">
+<label for="grossIncome">Gross Annual Income:</label>
+<input type="number" class="form-control" id="grossIncome" required>
+</div>
+<div class="form-group">
+<label for="extraIncome">Extra Income:</label>
+<input type="number" class="form-control" id="extraIncome" required>
+</div>
+<div class="form-group">
+<label for="age">Age Group:</label>
+<select class="form-control" id="age" required>
+<option value="<40">&lt;40</option>
+<option value="≥ 40 &lt; 60">≥ 40 &lt; 60</option>
+<option value="≥ 60">≥ 60</option>
+</select>
+</div>
+<div class="form-group">
+<label for="deductions">Total Applicable Deductions:</label>
+<input type="number" class="form-control" id="deductions" required>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<div id="errorIcon" class="error-icon"></div>
+</div>
+<div id="resultModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2>Your overall income will be </h2>
+<div id="taxResult"></div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
